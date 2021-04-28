@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   appName = 'Angular StepByStep'
-  name = 'Bhaumik D'
-  getName(){
-    return this.name;
+  //name = 'Bhaumik D'
+  getName(name: string){
+    alert(name)
   }
   obj = {
     name : "Bhaumik D",
@@ -20,3 +20,5 @@ export class AppComponent {
   b = 200
   siteUrl = window.location.href;
 }
+
+
