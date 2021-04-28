@@ -6,19 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  appName = 'Angular StepByStep'
-  //name = 'Bhaumik D'
-  getName(name: string){
-    alert(name)
+  appName = 'Angular StepByStep';
+  myEvent(e: string){
+    console.warn(e);
   }
-  obj = {
-    name : "Bhaumik D",
-    age : 30
-  }
-  arr = ['Bhaumik', 'Ramesh', 'Dhandhukia']
-  a = 100
-  b = 200
-  siteUrl = window.location.href;
 }
 
 

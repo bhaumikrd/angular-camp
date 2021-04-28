@@ -1,3 +1,17 @@
-<h1> Angular Functions Tut </h1>
+<h1> Important Events in Angular </h1>
 
-<button (click) = "getName('Bhaumik Dhandhukia')">Get My Name</button>
+<!-- click Events
+Keyup Events
+Keyup with enter and space
+Keydown
+Blur
+MouseOver & MouseLeave
+Get values on Textbox -->
+
+<button (click) = "myEvent('This is click event')">Click Me</button>
+<br><br>
+<input type="text" #textbox (keydown.enter)="myEvent(textbox.value)"/>
+<br><br>
+<input type="text" (blur)="myEvent('blue event')"/>
+<br><br>
+<div (mouseleave)="myEvent('MouseOver')" style="background-color: turquoise;"> Hover here</div>
