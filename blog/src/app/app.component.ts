@@ -7,8 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   appName = 'Angular StepByStep';
-  myEvent(e: string){
-    console.warn(e);
+
+  keyValues = '';
+  onKey(event: any) { // without type info
+    this.keyValues += event.target.value + ' | ';
+    console.log(this.keyValues);
+  }
+
+  clickValues ="";
+  onClick(eventValue: any) { // without type info
+    this.clickValues += eventValue + ' | ';
+    console.log(this.clickValues);
   }
 }
 

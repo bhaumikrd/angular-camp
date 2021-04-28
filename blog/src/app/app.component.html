@@ -1,17 +1,8 @@
-<h1> Important Events in Angular </h1>
+<h1> Get Textbox Value Key & Click </h1>
 
-<!-- click Events
-Keyup Events
-Keyup with enter and space
-Keydown
-Blur
-MouseOver & MouseLeave
-Get values on Textbox -->
+<input type="text" (keyup) = "onKey($event)" />
+<h2>{{keyValues}}</h2>
 
-<button (click) = "myEvent('This is click event')">Click Me</button>
-<br><br>
-<input type="text" #textbox (keydown.enter)="myEvent(textbox.value)"/>
-<br><br>
-<input type="text" (blur)="myEvent('blue event')"/>
-<br><br>
-<div (mouseleave)="myEvent('MouseOver')" style="background-color: turquoise;"> Hover here</div>
+<input type="text" #box/>
+<button (click)="onClick(box.value)">Add</button>
+<h2>{{clickValues}}</h2>
